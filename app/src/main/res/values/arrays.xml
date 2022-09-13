@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="activeSynonyms">
+        <item>active</item>
+        <item>active tasks</item>
+        <item>pending</item>
+        <item>pending tasks</item>
+        <item>open</item>
+    </array>
+
+    <array name="completedSynonyms">
+        <item>Completed</item>
+        <item>Completed tasks</item>
+        <item>Done</item>
+        <item>Done tasks</item>
+        <item>Inactive</item>
+        <item>Inactive tasks</item>
+    </array>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This is a sample shortcuts.xml -->
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--region Step 1-->
+    <capability android:name="actions.intent.GET_THING">
+        <intent
+            android:targetPackage="com.elizacamber.todo"
+            android:targetClass="com.elizacamber.todo.MainActivity">
+            <parameter
+                android:name="thing.name"
+                android:key="task.type" />
+        </intent>
+    </capability>
+    <!--endregion-->
+
+    <!--region Step 2-->
+    <shortcut
+        android:shortcutId="active"
+        android:shortcutShortLabel="@string/label_active"
+        tools:ignore="UnusedAttribute">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="active" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="completed"
+        android:shortcutShortLabel="@string/label_completed"
+        tools:ignore="UnusedAttribute">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/completedSynonyms" />
+        </capability-binding>
+    </shortcut>
+    <!--endregion-->
+</shortcuts>
