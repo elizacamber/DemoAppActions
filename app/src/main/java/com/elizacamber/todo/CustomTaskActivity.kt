@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class ActiveTasksActivity : AppCompatActivity(R.layout.activity_active_tasks) {
+class CustomTaskActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_custom_task)
 
-        val tvActive = findViewById<TextView>(R.id.tv_active)
-        tvActive.text = activeTasks.toString()
+        val tvCustom = findViewById<TextView>(R.id.tv_custom)
+        tvCustom.text = intent.getStringExtra("title") ?: "oops"
     }
 }

@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDoAppAction">
         <activity
+            android:name=".CustomTaskActivity"
+            android:exported="false" />
+        <activity
             android:name=".CompletedTasksActivity"
             android:exported="false" />
         <activity

@@ -10,6 +10,9 @@
             <parameter
                 android:name="thing.name"
                 android:key="task.type" />
+            <parameter
+                android:name="thing.name"
+                android:key="task.name" />
         </intent>
     </capability>
     <!--endregion-->
